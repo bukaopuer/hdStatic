@@ -2,7 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+import "./assets/css/normal.css"
+import 'element-ui/lib/theme-chalk/index.css';
+import animated from 'animate.css'
+import ElementUI from 'element-ui';
+import echarts from "echarts";
+Vue.prototype.$echarts = echarts;
+Vue.use(animated)
+Vue.use(ElementUI);
 Vue.config.productionTip = false
 
 new Vue({
